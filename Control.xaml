@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XF_144310_AhmadAlhrthi.Control">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Label Text="Control Page" x:Name="ControlPage"  HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+            
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                <Entry x:Name="Number" Placeholder="Number"></Entry>
+                <Entry x:Name="Code" Placeholder="Code"></Entry>
+            </StackLayout>
+            <StackLayout Margin="15">
+                <StackLayout  Orientation="Horizontal" HorizontalOptions="Center" Margin="0">
+                    <Button Text="Create" x:Name="Create" Clicked="Create_Clicked" Margin="0" WidthRequest="200" HeightRequest="180" FontSize="20" FontAttributes="Bold"/>
+                    <Button Text="Update" x:Name="Update" Clicked="Update_Clicked" Margin="0" WidthRequest="200" HeightRequest="180" FontSize="20" FontAttributes="Bold"/>
+
+
+
+
+                </StackLayout>
+                <StackLayout  Orientation="Horizontal" HorizontalOptions="Center" Margin="0">
+                    <Button Text="DELETE" x:Name="Delete" Clicked="Delete_Clicked"  Margin="0" WidthRequest="200" HeightRequest="180" FontSize="20" FontAttributes="Bold"/>
+                    <Button Text="BACK" x:Name="back" Clicked="back_Clicked" Margin="0" WidthRequest="200" HeightRequest="180" FontSize="20" FontAttributes="Bold"/>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

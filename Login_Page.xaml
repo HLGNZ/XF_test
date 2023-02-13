@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XF_144310_AhmadAlhrthi.Login_Page">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="CenterAndExpand">
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Label Text="Login page" x:Name="LoginPage"  HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+
+
+
+            <StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Entry x:Name="Number" Placeholder="Number" HorizontalTextAlignment="Center" WidthRequest="200" FontSize="25"></Entry>
+                    <Entry x:Name="Code" Placeholder="Code" HorizontalTextAlignment="Center" WidthRequest="200" FontSize="25"></Entry>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="30">
+                    <Button x:Name="Login" Text="Login" Clicked="Login_Clicked" HeightRequest="180" Rotation="30" FontSize="20" FontAttributes="Bold"></Button>
+                    <Button x:Name="Home" Text="Home" Clicked="Home_Clicked" HeightRequest="180" Rotation="30" FontSize="20" FontAttributes="Bold"></Button>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

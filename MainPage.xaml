@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XF_144310_AhmadAlhrthi.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label x:Name="HomePPage"  TextColor="White" FontSize="36" HorizontalTextAlignment="Center"/>
+        </Frame>
+       
+        <StackLayout  Orientation="Horizontal" HorizontalOptions="Center" Margin="0">
+            <Button x:Name="LoginPage" Clicked="LoginPage_Clicked" Margin="0" WidthRequest="200" HeightRequest="180" FontSize="20" FontAttributes="Bold"/>
+            <Button  x:Name="ControlPage" Clicked="ControlPage_Clicked" Margin="0" WidthRequest="200" HeightRequest="180" FontSize="20" FontAttributes="Bold"/>
+            </StackLayout>
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center"    Margin="0">
+            <Button  x:Name="GalleryPage" Clicked="GalleryPage_Clicked" Margin="0" WidthRequest="200" HeightRequest="180" FontSize="20" FontAttributes="Bold"/>
+            <Button  x:Name="close" HorizontalOptions="Center" Clicked="close_Clicked" Margin="0" WidthRequest="200" HeightRequest="180" FontSize="20" FontAttributes="Bold"/>
+        </StackLayout>
+
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Ahmad alharthi"  HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+    </StackLayout>
+
+</ContentPage>

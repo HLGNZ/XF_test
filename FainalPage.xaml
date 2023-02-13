@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XF_144310_AhmadAlhrthi.FainalPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Label Text="Final Page" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Number: " BackgroundColor="Gray"></Label>
+                <Label x:Name="number" BackgroundColor="Gray"></Label>
+                
+                
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Code: " BackgroundColor="Gray"></Label>
+                <Label x:Name="code" BackgroundColor="Gray"></Label>
+
+
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Button Text="CONTROLE PAGE" x:Name="ControlPage" Clicked="ControlPage_Clicked"></Button>
+                <Button Text="LOG OUT" x:Name="LOGOUTE" Clicked="LOGOUTE_Clicked"></Button>
+
+
+            </StackLayout>
+            <Frame>
+            <StackLayout>
+                    <Button Text="AllUsers" x:Name="AllUsers" Clicked="AllUsers_Clicked"  TextColor="White" WidthRequest="120"
+                        BackgroundColor="Brown" HorizontalOptions="Center"  FontSize="20" FontAttributes="Bold"/>
+                    <StackLayout>
+                        <ListView x:Name="allInfo" HasUnevenRows="True">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+                                        <StackLayout Orientation="Horizontal" Padding="10" HorizontalOptions="Center">
+                                            <Label Text="{Binding Id}"/>
+                                            <Label Text="{Binding Number}"  />
+                                            <Label Text="{Binding Code}"/>
+                                        </StackLayout>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </StackLayout>
+                </StackLayout>
+                
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
